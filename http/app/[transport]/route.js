@@ -139,8 +139,12 @@ const handler = createMcpHandler(
     maxDuration: 60,
     // With a Redis URL, mcp-handler serves the full Streamable HTTP transport
     // (POST + GET/SSE), which lets scanners like Smithery enumerate tools.
-    // Falls back to stateless POST-only if REDIS_URL is unset.
-    redisUrl: process.env.REDIS_URL,
+    // Vercel's Upstash/KV integration may name the var KV_URL or REDIS_URL.
+    // Falls back to stateless POST-only if none are set.
+    redisUrl:
+      process.env.REDIS_URL ||
+      process.env.KV_URL ||
+      process.env.UPSTASH_REDIS_URL,
   }
 );
 
