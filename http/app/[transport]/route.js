@@ -134,7 +134,14 @@ const handler = createMcpHandler(
     );
   },
   {},
-  { basePath: "" }
+  {
+    basePath: "",
+    maxDuration: 60,
+    // With a Redis URL, mcp-handler serves the full Streamable HTTP transport
+    // (POST + GET/SSE), which lets scanners like Smithery enumerate tools.
+    // Falls back to stateless POST-only if REDIS_URL is unset.
+    redisUrl: process.env.REDIS_URL,
+  }
 );
 
 export { handler as GET, handler as POST, handler as DELETE };
