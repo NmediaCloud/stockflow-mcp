@@ -10,6 +10,11 @@
 import { createMcpHandler } from "mcp-handler";
 import { z } from "zod";
 
+// MCP handler needs the Node.js runtime (not Edge) and a little headroom.
+export const runtime = "nodejs";
+export const maxDuration = 60;
+export const dynamic = "force-dynamic";
+
 const SITE = process.env.STOCKFLOW_BASE || "https://stockflow.media";
 const INDEX_URL = `${SITE}/data/search-index.json`;
 const CATALOG_URL = `${SITE}/data/catalog.json`;
