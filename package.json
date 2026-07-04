@@ -1,0 +1,21 @@
+{
+  "name": "stockflow-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Stockflow.media — search 18,000+ royalty-free stock images & 4K videos, use watermarked previews in presentations/videos/designs, license full-res from $1.",
+  "type": "module",
+  "bin": { "stockflow-mcp": "server.js" },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  },
+  "keywords": ["mcp", "modelcontextprotocol", "stock-images", "stock-footage", "royalty-free", "stockflow", "claude", "ai-assets"],
+  "author": "NMedia Services <nmedia.cloud@gmail.com>",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/NmediaCloud/stockflow-mcp.git" },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.23.0"
+  }
+}

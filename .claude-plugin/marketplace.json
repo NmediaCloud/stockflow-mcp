@@ -1,0 +1,11 @@
+{
+  "name": "stockflow",
+  "owner": { "name": "NMedia Services", "url": "https://stockflow.media" },
+  "plugins": [
+    {
+      "name": "stockflow-assets",
+      "source": "./",
+      "description": "Search & use 18,000+ royalty-free stock images and 4K videos from Stockflow.media in presentations, videos and designs. Watermarked previews free for drafts; license full-res from $1."
+    }
+  ]
+}

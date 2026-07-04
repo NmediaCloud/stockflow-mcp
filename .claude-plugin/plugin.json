@@ -1,0 +1,10 @@
+{
+  "name": "stockflow-assets",
+  "version": "0.1.0",
+  "description": "Search & use 18,000+ royalty-free stock images and 4K videos from Stockflow.media in presentations, videos and designs. Watermarked previews free for drafts; license full-res from $1.",
+  "author": { "name": "NMedia Services", "email": "nmedia.cloud@gmail.com", "url": "https://stockflow.media" },
+  "homepage": "https://stockflow.media",
+  "repository": "https://github.com/NmediaCloud/stockflow-mcp",
+  "license": "MIT",
+  "keywords": ["stock-images", "stock-footage", "royalty-free", "presentations", "design", "assets"]
+}
